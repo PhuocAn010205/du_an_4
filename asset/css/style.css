@@ -11,8 +11,118 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: rgb(255, 250 ,245);
 }
 input, textarea, select, button {
     font-family: inherit;
     font-size: inherit;
 } 
+/* Dung chung */
+.container {
+   width: 1170px;
+   max-width: calc(100% - 48px);
+   margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 9999px;
+    border: 1px solid rgba(0 , 9,88,0.7);
+    color: #000958;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+
+}
+.btn:hover{
+    opacity: 0.8;
+}
+/* Header */
+.header {
+    padding: 26px 0;
+}
+.header__inner{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+.navbar__link, .header-action__link {
+    padding: 8px 18px;
+    color: #5E6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+    line-height: 1; /* 100% */
+}
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #000958;
+}
+.header-action__btn {
+    --height:50px;
+    min-width: 118px;
+}
+/* Hero */
+.hero {
+    margin-top: 74px;
+}
+.hero__inner {
+     display: flex;
+     justify-content: space-between;
+      align-items: center;
+}
+.hero__media{
+    display: flex;
+}
+.hero__img-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 16px;
+    background: #FE997B;
+    width: 388px;
+    height: 488px;
+    border: 3px solid #fff;
+}
+/* Neu ma anh nho hon hoac lon hon thi cung chuyen ve cung kich thuoc */
+.hero__img {
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: inherit;
+}
+.hero__decorators{
+    position: absolute;
+    z-index: -1;
+}
+.hero__decorators-left {
+    left: -58px;
+    bottom: 10px;
+}
+.hero__decorators-right{
+    top:16px;
+    right: -43px;
+}
+.hero__img-wrap-small {
+  align-self: flex-end;  /*Dung de can rieng 1 item*/
+  width: 186px;
+  height: 244px;
+  background: #FAA7AD;
+  margin:0 0 -58px -24px;
+  border: 2px solid #f7dddf;
+}
+.hero__img-small {
+  
+}
