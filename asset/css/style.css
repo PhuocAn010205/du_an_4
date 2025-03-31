@@ -123,6 +123,18 @@ a {
   margin:0 0 -58px -24px;
   border: 2px solid #f7dddf;
 }
-.hero__img-small {
-  
+.hero__list {
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+.hero-list-item__thumb{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: rgba(254, 194, 63, 1);
 }
