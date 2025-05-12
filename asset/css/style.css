@@ -518,7 +518,8 @@ a {
 .service__top {
     text-align: center;
 }
-.service__desc {
+.service__desc,
+.staff__desc {
     color: #5E6085;
     font-family: Sora,sans-serif;
     font-size: 1.6rem;
@@ -612,6 +613,71 @@ a {
 }
 .service__cta{
     min-width: 214px;
+    color: rgba(255, 91, 46, 1);
+    border-color: currentColor;
+}
+/* Staff */
+.staff{
+    padding: 130px 0;
+}
+.staff__desc,
+.section__heading{
+    text-align: center;
+}
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 35px;
+}
+.staff-item{
+    text-align: center;
+}
+.staff-item__img-wrap{
+    margin: 0 16px;
+    border-radius: 130px;
+    overflow: hidden;
+    position: relative;
+
+}
+.staff-item__img-wrap::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 266px;
+    border-radius: inherit;
+    background: rgba(144, 204, 255, 1);
+}
+.staff-item__img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: block; /*Dung de bo khoang cach cua anh*/
+}
+.staff-item__title {
+     margin-top: 34px;
+     color: #656689;
+    font-family: Poppins,sans-serif;
+    font-size: 1.4rem;
+    line-height: 1; /* 100% */
+}
+.staff-item__name {
+    margin-top: 14px;
+    font-weight: 600;
+     color: #000958;
+     font-family: Sora,sans-serif;
+     font-size: 2.2rem;
+    line-height: 1; /* 100% */
+}
+.staff__cta-wrap {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.staff__cta {
+    min-width: 193px;
     color: rgba(255, 91, 46, 1);
     border-color: currentColor;
 }
