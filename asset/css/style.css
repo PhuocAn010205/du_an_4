@@ -636,24 +636,64 @@ a {
 .staff-item__img-wrap{
     margin: 0 16px;
     border-radius: 130px;
-    overflow: hidden;
     position: relative;
 
 }
+.staff-item__img-wrap::after{
+    content: "";
+    position: absolute;
+    left:  50%;
+    bottom: 0;
+    transform: translateX(-50%);/* Can giua*/
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;/* Khong cho no lap lai*/
+    background-position: bottom;/* Can giua*/
+}
+.staff-item:nth-child(1) .staff-item__img-wrap::after{
+       background-image: url(../icon/icon1.svg);
+
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::before{
+    background: rgba(255, 153, 126, 1);
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::before{
+    background: rgba(250, 191, 62, 1)
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::before{
+    background: rgba(91, 214, 226, 1);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::after{
+       background-image: url(../icon/icon2.svg);
+
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::after{
+       background-image: url(../icon/icon3.svg);
+
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::after{
+       background-image: url(../icon/icon4.svg);
+
+    }
+    .staff-item:nth-child(even) .staff-item__img-wrap::after{
+        background-position: 0 16px ;
+    }    
 .staff-item__img-wrap::before{
     content: "";
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 266px;
+    height: 94%;
     border-radius: inherit;
     background: rgba(144, 204, 255, 1);
+
 }
 .staff-item__img{
     width: 100%;
     position: relative;
     z-index: 1;
+    border-radius: inherit;
     display: block; /*Dung de bo khoang cach cua anh*/
 }
 .staff-item__title {
